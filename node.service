@@ -1,0 +1,18 @@
+[Unit]
+Description=Prometheus
+Documentation=https://prometheus.io/docs/introduction/overview/
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=prometheus
+Group=prometheus
+ExecReload=/bin/kill -HUP \$MAINPID
+ExecStart=/usr/local/bin/node_exporter
+
+SyslogIdentifier=prometheus
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
