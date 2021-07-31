@@ -9,7 +9,7 @@ Type=simple
 User=prometheus
 Group=prometheus
 ExecReload=/bin/kill -HUP \$MAINPID
-ExecStart=/usr/local/bin/node_exporter
+ExecStart=/var/lib/node/node_exporter
 
 SyslogIdentifier=prometheus
 Restart=always
