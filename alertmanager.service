@@ -1,5 +1,5 @@
 [Unit]
-Description=Prometheus
+Description=Prometheus Alert Manager
 Documentation=https://prometheus.io/docs/introduction/overview/
 Wants=network-online.target
 After=network-online.target
@@ -9,9 +9,9 @@ Type=simple
 User=prometheus
 Group=prometheus
 ExecReload=/bin/kill -HUP \$MAINPID
-ExecStart=/var/lib/node/node_exporter
+ExecStart=/var/lib/alertmanager/alertmanager
 
-SyslogIdentifier=prometheus
+SyslogIdentifier=prometheus_alert_manager
 Restart=always
 
 [Install]
