@@ -1,5 +1,5 @@
 [Unit]
-Description=Prometheus Node Exporter
+Description=Prometheus
 Documentation=https://prometheus.io/docs/introduction/overview/
 Wants=network-online.target
 After=network-online.target
@@ -11,7 +11,7 @@ Group=prometheus
 ExecReload=/bin/kill -HUP \$MAINPID
 ExecStart=/var/lib/node/node_exporter
 
-SyslogIdentifier=prometheus_node_exporter
+SyslogIdentifier=prometheus
 Restart=always
 
 [Install]
