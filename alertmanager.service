@@ -8,7 +8,7 @@ After=network-online.target
 Type=simple
 User=prometheus
 Group=prometheus
-ExecReload=/bin/kill -HUP \$MAINPID
+ExecReload=/bin/kill -HUP $MAINPID
 ExecStart=/var/lib/alertmanager/alertmanager --storage-path="/var/lib/alertmanager/data" --config.file="/var/lib/alertmanager/alertmanager.yml"
 
 SyslogIdentifier=prometheus_alert_manager

@@ -8,7 +8,7 @@ After=network-online.target
 Type=simple
 User=prometheus
 Group=prometheus
-ExecReload=/bin/kill -HUP \$MAINPID
+ExecReload=/bin/kill -HUP $MAINPID
 ExecStart=/var/lib/node/node_exporter
 
 SyslogIdentifier=prometheus_node_exporter
