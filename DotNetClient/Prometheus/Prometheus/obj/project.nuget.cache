@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "LNvujU6kv7yfb+ycOAJ6IIa/6sTZEXBvImNahppJbM3nUsM+IlROyyo7J+5Zu5Don3r7FwFP2WbP6Y1T//gEBg==",
+  "success": true,
+  "projectFilePath": "/Users/aref/Documents/GitHub/Prometheus/DotNetClient/Prometheus/Prometheus/Prometheus.csproj",
+  "expectedPackageFiles": [
+    "/Users/aref/.nuget/packages/microsoft.extensions.configuration/3.1.9/microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.9/microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.configuration.binder/3.1.9/microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.9/microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.9/microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.http/3.1.9/microsoft.extensions.http.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.logging/3.1.9/microsoft.extensions.logging.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.9/microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.options/3.1.9/microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/microsoft.extensions.primitives/3.1.9/microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "/Users/aref/.nuget/packages/prometheus-net/5.0.1/prometheus-net.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
