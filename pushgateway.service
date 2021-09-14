@@ -1,4 +1,4 @@
-Unit]
+[Unit]
 Description=Prometheus Pushgateway
 Wants=network-online.target
 After=network-online.target
