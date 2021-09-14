@@ -1,0 +1,4 @@
+- targets:
+  - localhost:9100
+  labels:
+    team: "Team Alpha"
