@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus", "Prometheus\Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prom-web", "..\..\..\PromeTest\prom-web\prom-web.csproj", "{6F1D57D5-0B6C-4D89-92D5-4C8CEEF6BF46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pushgatewaydotnet", "pushgatewaydotnet\pushgatewaydotnet.csproj", "{2FBD4C77-4178-4064-B07A-AB6936A2ED49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{6F1D57D5-0B6C-4D89-92D5-4C8CEEF6BF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F1D57D5-0B6C-4D89-92D5-4C8CEEF6BF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F1D57D5-0B6C-4D89-92D5-4C8CEEF6BF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FBD4C77-4178-4064-B07A-AB6936A2ED49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBD4C77-4178-4064-B07A-AB6936A2ED49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBD4C77-4178-4064-B07A-AB6936A2ED49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBD4C77-4178-4064-B07A-AB6936A2ED49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
