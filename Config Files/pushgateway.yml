@@ -1,0 +1,6 @@
+tls_server_config:
+  cert_file: /usr/local/etc/prom.crt
+  key_file:  /usr/local/etc/prom.key
+
+basic_auth_users:
+  admin: $2y$10$zCuKBSRktt1Q7KRliIaBlejdN6xu1lnLMa5oDg2sRDHEwZsyXjVU2

@@ -1,0 +1,74 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+    - targets: ["localhost:9090"]
+  
+  - job_name: "node_exporter"
+    scheme: https
+    tls_config:
+      ca_file: /usr/local/etc/prom.crt
+      server_name: 'localhost'
+    basic_auth:
+      username: admin
+      password: password
+    static_configs:
+    - targets: ["localhost:9100"]
+
+  - job_name: "pushgateway"
+    scheme: https
+    tls_config:
+      ca_file: /usr/local/etc/prom.crt
+      server_name: 'localhost'
+    basic_auth:
+      username: admin
+      password: password
+    static_configs:
+    - targets: ["localhost:9091"]
+
+  - job_name: "file sd"
+    file_sd_configs:
+      - files:
+        - /usr/local/etc/file_sd/*.yml
+
+  - job_name: "aws sd"
+    ec2_sd_configs: 
+      - port: 9090
+        region: ap-southeast-2
+        access_key: AKIA2FVFSUDGCTIFDYMI
+        secret_key: 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
+        filters:
+          - name: tag:Name
+            values:
+              - dev-*
+    
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name, __meta_ec2_private_ip]  
+        target_label: instance
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: dev-test-.*
+        action: drop
+      - source_labels: [__meta_ec2_public_ip]
+        replacement: ${1}:9100
+        target_label: __address__
+
+        
+
+
+
+rule_files:
+  - "rule/alerts.yml"
+  - "rule/recording_rule.yml"
+
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+       - localhost:9093
+
+
+
+
+      
