@@ -28,11 +28,6 @@ namespace pushgatewaydotnet
                 gauge.Set(new Random(DateTime.Now.Millisecond).Next() * 100);
                 Thread.Sleep(100);
             }
-            
-
-            pusher.Stop();
-            
-            Console.WriteLine("Hello World!");
         }
     }
 }

@@ -54,14 +54,9 @@ namespace Prometheus
             
             while (true)
             {
-                // counter.Inc();
-                
-                gauge.WithLabels(new[]{"1" ,"2"}).Set(100);
-                
+                gauge.WithLabels(new[]{"1" ,"2"}).Set(100);                
                 Thread.Sleep(TimeSpan.FromSeconds(1));
             }
-            
-            Console.WriteLine("Hello World!");
         }
     }
 }
